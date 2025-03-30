@@ -1,0 +1,191 @@
+/* font */
+
+@font-face {
+    font-family: 'SUITE-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'KBO-Dia-Gothic_bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/KBO-Dia-Gothic_bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+/* 전체 style */
+
+body {
+    font-family: 'SUITE-Regular';
+    width: 80%;
+    margin: 0 auto;
+    background-color: rgb(255, 237, 215);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul,
+li {
+    margin: 0;
+    font-size: 20px;
+}
+
+.logoFont {
+    font-family: 'KBO-Dia-Gothic_bold';
+}
+
+
+/* 네비게이션 바 */
+
+.navbar {
+    background-color: rgb(255, 237, 215);
+    height: 70px;
+    line-height: 70px;
+    position: fixed;
+    width: 80%;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 25px;
+    font-style: italic;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu p {
+    margin-right: 8px;
+    margin-left: 8px;
+}
+
+
+/* articleA */
+
+.Acontent {
+    font-size: 17px;
+    word-break: keep-all;
+}
+
+.articleA {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.articleA>div {
+    width: 45%;
+}
+
+.mainLeft {
+    text-align: center;
+}
+
+.mainLeft img {
+    width: 80%;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.mainRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* articleB */
+
+.articleB {
+    min-height: 80vh;
+}
+
+.valueTitle {
+    font-size: 30px;
+}
+
+.valueContent {
+    display: flex;
+    align-items: center;
+    margin: 50px;
+}
+
+.valueContentImg {
+    width: 20%;
+}
+
+.valueContentImg img {
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.valueContentIntro {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-left: 50px;
+}
+
+.introTitle {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+/* articleC */
+
+.articleC {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact div {
+    margin: 10px;
+}
+
+.contactMe {
+    font-size: 50px;
+    border-bottom: 8px solid black;
+    font-weight: bold;
+}
+
+.contactLink {
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.contactLast {
+    text-align: center;
+    font-size: 18px;
+}
