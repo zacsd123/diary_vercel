@@ -248,6 +248,7 @@
     background: linear-gradient(to bottom, red, orange, yellow, lightgreen, rgb(3, 97, 135), indigo, purple);
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    /* 복습 */
     font-weight: bold;
 
   }
