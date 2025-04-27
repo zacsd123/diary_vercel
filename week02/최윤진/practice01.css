@@ -4,32 +4,16 @@
 }
 
 @font-face {
-  font-family: "normalfont";
-  src: url(font/KoPubWorld\ Batang\ Medium.ttf);
-}
-
-@font-face {
   font-family: "kakaofont";
   src: url(font/KakaoSmallSans-Bold.ttf);
 }
 
-.section1 {
+/* 공통 스타일 */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
   background-color: #ffffff;
-  height: 100vh;
-}
-
-.section2 {
-  background-color: #cacaca;
-  height: 100vh;
-  display: flex;
-  /* justify-content: center;
-  align-items: center; */
-}
-
-.section3 {
-  background-color: #ffffff;
-  height: 100vh;
-  display: flex;
 }
 
 a {
@@ -39,14 +23,28 @@ a {
 
 a:hover {
   color: rgb(0, 110, 255);
+  text-decoration: underline;
+}
+
+/* 헤더 & 네비게이션 */
+header nav {
+  margin-top: 25px;
+  margin-left: 30px;
 }
 
 .navbar {
-  margin-top: 25px;
-  margin-left: 30px;
   font-family: "myfont", sans-serif;
   font-size: 16px;
-  text-align: left;
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+}
+
+/* 프로필 섹션 */
+.section1 {
+  background-color: #ffffff;
+  height: 100vh;
 }
 
 .container0 {
@@ -60,8 +58,6 @@ a:hover {
   height: 600px;
   width: 420px;
   margin-left: 75px;
-  /* margin-left: 70px;
-  margin-top: 40px; */
 }
 
 .right-box {
@@ -92,149 +88,126 @@ a:hover {
 
 .sogae {
   margin-top: 50px;
-  flex-direction: column;
   font-family: "kakaofont", sans-serif;
   font-size: 24px;
 }
+
 .line1 {
   margin-left: 395px;
 }
-
 .line2 {
   margin-left: 370px;
 }
-
 .line3 {
   margin-left: 330px;
 }
 
-.container1 {
-  margin-left: 50px;
-  display: flex;
-  flex-direction: row;
-  gap: 100px;
+/* 좋아하는 것들 섹션 */
+.section2 {
   background-color: #cacaca;
+  height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start\;;
 }
 
 .containerframe {
-  margin-left: 0px;
+  margin-right: 100px;
+  width: 100%;
+  max-width: 1200px;
 }
 
 .container01 {
-  margin-left: 50px;
-  display: flex;
-  background-color: #cacaca;
   width: 500px;
   height: 70px;
+  background-color: #cacaca;
+  display: flex;
+  align-items: center;
 }
 
 .til {
   font-family: "myfont", sans-serif;
   margin-left: 10px;
-  margin-top: 20px;
   font-size: 45px;
 }
 
-.img1 {
+.container1 {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  flex-direction: row;
+  background-color: #cacaca;
 }
 
-.img2 {
-  display: flex;
-  flex-direction: column;
-}
-
+.img1,
+.img2,
 .img3 {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
 }
 
-.wick {
-  height: 370px;
-  width: auto;
-}
-
-.youra {
-  height: 370px;
-  width: auto;
-}
-
+.wick,
+.youra,
 .food {
   height: 370px;
   width: auto;
 }
 
+/* 텍스트 위치 */
 .p1 {
   margin-left: 50px;
-  font-family: "myfont", sans-serif;
+  font-family: "myfont";
   font-size: 50px;
 }
-
 .p2 {
   margin-left: 62px;
-  font-family: "kakaofont", sans-serif;
+  font-family: "kakaofont";
   font-size: 25px;
 }
 
 .p3 {
   margin-left: 160px;
-  font-family: "myfont", sans-serif;
+  font-family: "myfont";
   font-size: 50px;
 }
-
 .p4 {
   margin-left: 175px;
-  font-family: "kakaofont", sans-serif;
+  font-family: "kakaofont";
   font-size: 25px;
 }
 
 .p5 {
   margin-left: 90px;
-  font-family: "myfont", sans-serif;
+  font-family: "myfont";
   font-size: 50px;
 }
-
 .p6 {
   margin-left: 110px;
-  font-family: "kakaofont", sans-serif;
+  font-family: "kakaofont";
   font-size: 25px;
 }
 
-.section3 {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #ffffff;
-}
-
+/* 연결 수단 섹션 */
 #section3 {
   height: 100vh;
   background-color: #ffffff;
   font-family: "myfont", sans-serif;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-#section3 h1 {
+#section3 h2 {
   font-size: 50px;
   margin-bottom: 20px;
 }
 
 #section3 a {
-  display: block; /* 각 링크를 블록 요소로 취급 */
+  display: block;
   font-size: 18px;
-  color: #000;
-  text-decoration: none;
   margin: 5px 0;
 }
 
-#section3 a:hover {
-  color: rgb(0, 110, 255);
-  text-decoration: underline;
-}
+<!-- 수정 테스트용 주석 -->
