@@ -1,0 +1,113 @@
+#login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  #login-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: bold;
+    width: 300px;
+    height: 400px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 30px;
+  }
+  
+  .login-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  
+  #login-logo {
+    font-size: 40px;
+    margin-bottom: 50px;
+  }
+  
+  #kakao-login {
+    background-color: #fee500;
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #kakao-login > img {
+    margin-right: 8px;
+  }
+  
+  .size {
+    width: 300px;
+    padding: 10px;
+    box-sizing: border-box; /* border와 padding이 width와 height에 포함 */
+  }
+  
+  #login-id {
+    margin-bottom: 5px;
+  }
+  
+  #password {
+    margin-bottom: 20px;
+  }
+  
+  #login-btn {
+    border: none;
+    border-radius: 5px;
+    color: lightgray;
+    font-weight: 700; 
+  }
+  
+  #login-bottom {
+    margin-bottom: 30px;
+    font-size: 12px;
+    color: gray;
+  }
+  
+/* popup을 화면 정중앙에 고정시키고 배경 덮도록 설정 */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;               /* 전체 너비 */
+  height: 100vh;              /* 전체 높이 */
+  background: rgba(0, 0, 0, 0.3); /* 약간 어두운 반투명 배경 */
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;              /* 다른 요소보다 위로 */
+}
+  
+/* 팝업 내용 상자 */
+.popup-box {
+  background: white;
+  width: 300px;
+  height: 400px;
+  border-radius: 10px;
+  padding: 30px 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+  
+  .popup button {
+    width: 300px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 20px;            
+    padding: 10px 20px;          
+    font-weight: bold;           
+    background-color: #E67800;   
+    color: white;                
+    border: none;                /* 테두리 없음 */
+    border-radius: 5px;          
+}
